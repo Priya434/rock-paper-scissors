@@ -1,0 +1,130 @@
+/* Set colors to variables
+   to make it easier to write and read code */
+:root {
+  --white: #fff;
+  --whitish: #fffffff0;
+  --translucent: #ffffffa6;
+  --black: #000;
+  --blue: #000aff;
+  --cyan: #00fff7;
+  --light-blue: #009cff;
+  --red: #ee4949;
+  --yellow: #ffeb00;
+  --green: #00ff57;
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+main, .hand-sign, aside {
+  display: flex;
+}
+
+main, .hand-sign {
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.hand-sign {
+  font-size: 2rem;
+}
+
+.who-scores {
+  font-size: 1.25rem;
+  margin-top: 8em;
+  width: 5.5rem;
+}
+
+aside {
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.computer-choices-button {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.player-choices-button {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.player-choices-button:active {
+  border: 2px solid var(--blue);
+}
+
+button {
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 1.5em 0.5em;
+  z-index: 1;
+}
+
+/* .player-choices-buttons {
+  margin: 2em;
+} */
+.logs {
+  background-color: var(--translucent);
+  border: 2px solid var(--black);
+  min-height: 10rem;
+  max-width: 30rem;
+  margin: auto;
+}
+
+.logs h2 {
+  background-color: var(--white);
+  border-bottom: 2px solid var(--black);
+  margin: 0;
+}
+
+.write-logs-ol {
+  margin: 0;
+  text-align: left;
+}
+
+.win-lose-alert {
+  background-color: var(--whitish);
+  border-radius: 20px;
+  display: none;
+  position: absolute;
+  height: 55%;
+  width: 85%;
+  left: 7%;
+  top: 10%;
+  z-index: 1;
+}
+
+.win-lose-alert-title {
+  color: var(--blue);
+  font-weight: normal;
+  margin-top: 3em;
+}
+
+.play-again-button {
+  background-color: var(--green);
+  border: 2px solid var(--red);
+  border-radius: 20px;
+  color: var(--black);
+  font-size: 1.25rem;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.play-again-button:active {
+  border: 2px solid var(--black);
+}
+
+.active-button {
+  background-color: var(--light-blue);
+  color: var(--yellow);
+}

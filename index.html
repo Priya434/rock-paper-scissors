@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page author and description -->
+  <meta name="author" content="Priyanshu">
+  <meta name="author-github" content="https://github.com/Priya434">
+  <meta name="description" content="This is a classic and
+    simple game of rock-paper-scissors. Enjoy!!!">
+
+  <!-- External Links -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/vsComputer.js" charset="utf-8" defer></script>
+
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+  <!-- Display Scores: out of five-->
+  <h2 class="scores">Scores: 0 - 0</h2>
+
+  <!-- Start of main -->
+  <main>
+  <!-- Buttons and signs -->
+
+    <!-- Computer buttons -->
+    <aside class="computer-choices-buttons">
+      <button class="computer-choices-button" type="button" value="rock" name="rock">Rock</button>
+      <button class="computer-choices-button" type="button" value="paper" name="paper">Paper</button>
+      <button class="computer-choices-button" type="button" value="scissors" name="scissors">Scissors</button>
+    </aside>
+
+    <!-- Computer-sign -->
+    <div class="hand-sign">
+      <div class="sign computer-sign">
+        <img class="computer-sign-img" src="images/computer-rock.png" alt="rock">
+        <p>Computer</p>
+      </div>
+
+      <!-- Display who has scored at the instance -->
+      <p class="who-scores"></p>
+
+      <!-- Player-sign -->
+      <div class="sign player-sign">
+        <img class="player-sign-img" src="images/player-rock.png" alt="paper">
+        <p>Player</p>
+      </div>
+    </div>
+
+    <!-- Player buttons -->
+    <aside class="player-choices-buttons">
+      <button class="player-choices-button" type="button" value="rock" name="rock">Rock</button>
+      <button class="player-choices-button" type="button" value="paper" name="paper">Paper</button>
+      <button class="player-choices-button" type="button" value="scissors" name="scissors">Scissors</button>
+    </aside>
+  </main>
+  <!-- End of main -->
+
+  <!-- Keep and show logs of who used what and who scored -->
+  <section class="logs">
+    <h2>Logs</h2>
+    <div class="write-logs">
+      <ol class="write-logs-ol" reversed>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- Stops all the button functionalities and
+  shows if player has won or lost at the end of five rounds -->
+  <div class="win-lose-alert">
+    <h1 class="win-lose-alert-title">You Win!!!</h1>
+    <button class="play-again-button" type="button" name="play-again-button">Play Again</button>
+  </div>
+
+</body>
+
+</html>
